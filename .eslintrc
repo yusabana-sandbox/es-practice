@@ -29,7 +29,7 @@ rules:
     - unix
   semi:
     - error
-    - always
+    - never
   comma-dangle:
     - error
     - always-multiline
