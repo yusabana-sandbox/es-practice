@@ -32,3 +32,12 @@ mkdir {src,dist}
 
 references for parserOptions, etc.
 http://eslint.org/docs/user-guide/configuring#specifying-parser-options
+
+
+## execute src scripts
+
+ソースを直接ビルドして実行する
+
+```
+% yarn babel-node src/app.js
+```
