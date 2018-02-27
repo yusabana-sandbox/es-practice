@@ -45,7 +45,7 @@ console.log(arr2)
 import util from 'util'
 
 // allow function の ネスト
-let arrwFunc5 = (x) => (y) => ({ aa: x + y })
+let arrwFunc5 = x => y => ({ 'x+y': x + y, x: x, y: y })
 console.log(util.inspect(arrwFunc5(5))) // return Function util.inspect使ってもFunctionは展開されない
 console.log(arrwFunc5(5)(2))
 // 以下のようなfunctionと同じ
