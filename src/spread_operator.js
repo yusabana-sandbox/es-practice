@@ -33,3 +33,8 @@ const { firstName, lastName, ...others } = person
 console.log('firstName:', firstName)
 console.log('lastName:', lastName)
 console.log('others:', others)
+
+console.log('aaaaaaaaaa')
+console.log(person)
+const mergedPerson = { ...person, firstName: 'ABC', lastName: 'XYZ', fuga: 'FUGA' }
+console.log(mergedPerson)
