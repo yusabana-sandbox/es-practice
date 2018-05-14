@@ -14,7 +14,8 @@ myFunction(...obj)
 
 
 function hoge(...args) {
-  console.log(args)
+  console.log(args) // 配列として受け取っている
+  console.log(...args) // 配列が展開される
 }
 hoge(1,3,33, 'aaaa', [2,2,2])
 
