@@ -35,3 +35,11 @@ const {c, d, ...other2} = {a:1, b:2, c:3, d:4} //ES2016 - Firefox 47a01 では�
 console.log(c)
 console.log(d)
 console.log(other2)
+
+console.log('-------------')
+
+const { props: { A, B }, ...others} = {props: { A: 'a', B: 'b' }, a:1, b:2, c:3, d:4}
+console.log(A)
+console.log(B)
+console.log(others)
+
