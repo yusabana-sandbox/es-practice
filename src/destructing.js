@@ -43,3 +43,9 @@ console.log(A)
 console.log(B)
 console.log(others)
 
+console.log('-------------')
+
+const {c: renameC, d: renameD, ...others2} = {a:1, b:2, c:3, d:4} //ES2016 - Firefox 47a01 では未実装
+console.log(renameC)
+console.log(renameD)
+console.log(others2)
