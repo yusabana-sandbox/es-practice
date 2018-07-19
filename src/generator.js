@@ -6,7 +6,7 @@
 //   - ジェネレータ関数では `yield` 及び `yield*` を使うことができる
 
 function* gfn(from, to){ 
-  while(from <= to) yield from++
+  while(from <= to) yield from++ // 後置incrementで yield に渡されたあとにインクリメントされる
 }
 const g1 = gfn(1, 20)
 for(const num of g1) console.log(num)
