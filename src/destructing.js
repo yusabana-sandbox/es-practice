@@ -23,6 +23,9 @@ console.log(aa) // 1
 console.log(bb) // 2
 console.log(other) // [3, 4, 5]
 
+const hogee = [11,22, aa, ...other, other]
+console.log(hogee)
+
 console.log('-------------')
 
 const { aaa, bbb } = {aaa:1, bbb:2}
