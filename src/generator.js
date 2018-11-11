@@ -16,12 +16,12 @@ console.log('--------------')
 
 function* gfn2() {
   let a = yield 0
-  yield* [1, a, 5]
+  yield* [1, a, 5]  // yield* にはいてラブルなオブジェクトを与えて順に yield を行ってくれる
 }
 
 const g2 = gfn2()
 console.log(g2.next())
-console.log(g2.next(3))
+console.log(g2.next('hoho')) // 一旦停止している yield 0 の値が 3 に置き換わり a = 'hoho' が実行される
 console.log(g2.next())
 console.log(g2.next())
 console.log(g2.next())
