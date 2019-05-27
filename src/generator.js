@@ -16,7 +16,7 @@ console.log('--------------')
 
 function* gfn2() {
   let a = yield 0
-  yield* [1, a, 5]  // yield* にはいてラブルなオブジェクトを与えて順に yield を行ってくれる
+  yield* [1, a, 5]  // yield* にはイテラブルななオブジェクトを与えて順に yield を行ってくれる
 }
 
 const g2 = gfn2()
